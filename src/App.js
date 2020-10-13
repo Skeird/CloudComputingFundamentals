@@ -25,7 +25,7 @@ export default function App() {
             </ul>
           </nav>
 
-          <MyComponent></MyComponent>
+          <MyComponent/>
 
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
@@ -56,3 +56,7 @@ function About() {
 function Users() {
   return <h2>Users</h2>;
 }
+/*
+
+"https://s3.console.aws.amazon.com/s3/buckets/cloud-learning-epitech/?region=us-east-1&tab=overview"
+"7f0e63b393f49c4fcc8e9680058d6c60509f0c90890ce454797d454dec0c8410"*/
