@@ -1,4 +1,3 @@
-
 # Created by https://www.toptal.com/developers/gitignore/api/jetbrains+all,linux,windows,react,git,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=jetbrains+all,linux,windows,react,git,visualstudiocode
 
@@ -8,14 +7,14 @@
 *.orig
 
 # Created by git when using merge tools for conflicts
-*.BACKUP.*
-*.BASE.*
-*.LOCAL.*
-*.REMOTE.*
-*_BACKUP_*.txt
-*_BASE_*.txt
-*_LOCAL_*.txt
-*_REMOTE_*.txt
+.BACKUP.
+.BASE.
+.LOCAL.
+.REMOTE.
+BACKUP.txt
+BASE.txt
+LOCAL.txt
+REMOTE.txt
 
 ### JetBrains+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -125,13 +124,13 @@ modules.xml
 .DS_*
 *.log
 logs
-**/*.backup.*
-**/*.back.*
+*/.backup.*
+*/.back.*
 
 node_modules
 bower_components
 
-*.sublime*
+.sublime
 
 psd
 thumb
