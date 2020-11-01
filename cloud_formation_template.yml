@@ -1,0 +1,36 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Template for the CloudLearning project's stack
+# Parameters:
+#   set of parameters
+# Mappings:
+#   set of mappings
+# Transform:
+#   set of transforms
+Resources:
+  FrontEndHostBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: cloud-learning-epitech
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: false
+        BlockPublicPolicy: false
+        IgnorePublicAcls: false
+        RestrictPublicBuckets: false
+      WebsiteConfiguration: 
+        IndexDocument: index.html
+
+  BucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties: 
+      Bucket: !Ref FrontEndHostBucket
+      PolicyDocument:
+        Id: Policy1602669896550
+        Version: "2012-10-17"
+        Statement:
+          - Sid: Stmt1602669895326
+            Effect: Allow
+            Action: "s3:GetObject"
+            Principal: "*"
+            Resource: !Join ['', ['arn:aws:s3:::', !Ref FrontEndHostBucket, '/*']]
+# Outputs:
+#   set of outputs
