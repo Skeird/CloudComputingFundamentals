@@ -17,7 +17,7 @@ class App extends Component {
             <BrowserRouter>
             <Switch>
                 <Route path="/" component={login} exact />
-                <Route path="/test" component={test_api} exact />
+                <Route path="/test-api" component={test_api} exact />
                 <Route component={Error} />
             </Switch>
             </BrowserRouter>
