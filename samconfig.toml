@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "CloudLearning"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1hw1em2sd7sr7"
+s3_prefix = "CloudLearning"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
