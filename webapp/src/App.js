@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import login from "./components/login/login";
+import test_api from "./components/test_api/test_api"
 
 const Error = () => {
     return (
@@ -16,6 +17,7 @@ class App extends Component {
             <BrowserRouter>
             <Switch>
                 <Route path="/" component={login} exact />
+                <Route path="/test-api" component={test_api} exact />
                 <Route component={Error} />
             </Switch>
             </BrowserRouter>

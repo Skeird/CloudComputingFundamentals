@@ -1,11 +1,5 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description: Template for the CloudLearning project's stack
-# Parameters:
-#   set of parameters
-# Mappings:
-#   set of mappings
-# Transform:
-#   set of transforms
 Resources:
   FrontEndHostBucket:
     Type: AWS::S3::Bucket
@@ -32,5 +26,3 @@ Resources:
             Action: "s3:GetObject"
             Principal: "*"
             Resource: !Join ['', ['arn:aws:s3:::', !Ref FrontEndHostBucket, '/*']]
-# Outputs:
-#   set of outputs
