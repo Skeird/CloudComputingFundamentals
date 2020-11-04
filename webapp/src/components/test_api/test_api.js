@@ -19,7 +19,7 @@ export default class Test_api extends React.Component {
             url: 'https://k9wwepp62a.execute-api.us-east-1.amazonaws.com/Prod/hello?foo=bar',
         }).then(response => {
             this.setState({
-                test: response.data .foo
+                test: response.data.foo
             })
         }).catch(err => console.error(err));
     }
